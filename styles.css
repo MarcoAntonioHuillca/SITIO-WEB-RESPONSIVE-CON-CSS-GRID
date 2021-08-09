@@ -1,0 +1,91 @@
+/*eston son las variables que vamos a utlizar */
+:root {
+  --chocolate: #d2261e;
+  --naranja: #fd6a01;
+  --gris: #202020;
+  --negro: #000000;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--gris);
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+h2 {
+  color: var(--naranja);
+}
+
+p {
+  color: white;
+}
+
+.cabecera {
+  background-color: var(--chocolate);
+  color: white;
+  padding: 40px;
+  margin-bottom: 15px;
+  height: auto;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  margin: 0px 30px;
+}
+.item {
+  background-color: var(--negro);
+  padding: 20px;
+  border-radius: 10px;
+}
+h3 {
+  color: white;
+  text-align: center;
+}
+
+footer {
+  background-color: var(--negro);
+  padding: 20px;
+  margin-top: 15px;
+  height: auto;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+  ul {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  ul {
+    grid-template-columns: 1fr;
+  }
+}
